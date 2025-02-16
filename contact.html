@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <title>Mexant Template - Contact page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YOUR_PUBLIC_KEY",
+      });
+   })();
+</script>
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+<style>
+  /* General styles */
+
+
+section.contact-us-form {
+  padding: 60px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section .section-heading h6 {
+  color: #ff7f32;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+section .section-heading h4 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phone"]:focus,
+textarea:focus {
+  border-color: #ff7f32;
+  outline: none;
+}
+
+button.orange-button {
+  width: 100%;
+  background-color: #ff7f32;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.orange-button:hover {
+  background-color: #e76f26;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-lg-6 {
+  width: 48%;
+}
+
+.col-lg-12 {
+  width: 100%;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .col-lg-6 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-heading h4 {
+    font-size: 24px;
+  }
+
+  .section-heading h6 {
+    font-size: 16px;
+  }
+}
+.logo-slider {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .logo-items {
+    display: flex;
+    animation: scroll 20s linear infinite;
+  }
+
+  .logo-item {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+
+  .logo-item img {
+    width: 300px;
+    height: 200px;
+    display: block;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .logo-item:hover .caption {
+    opacity: 1;
+  }
+
+  @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-items {
+  display: flex;
+  animation: scroll 10s linear infinite; /* Reduced the duration from 20s to 10s to increase the speed */
+}
+
+
+</style>
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="aso.png" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="index.html">Home</a></li>
+                          <li class="scroll-to-section"><a href="index.html">Services</a></li>
+                          <li class="scroll-to-section"><a href="index.html">About</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Pages</a>
+                              <ul class="sub-menu">
+                                  <li><a href="about-us.html">About Us</a></li>
+                                  <li><a href="our-services.html">Our Services</a></li>
+                                  <li><a href="contact-us.html">Contact Us</a></li>
+                              </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="index.html">Testimonials</a></li>
+                          <li><a href="contact-us.html">Contact Support</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h2>Contact Us</h2>
+            <div class="div-dec"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="map">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.4379712124423!2d85.8060796250596!3d20.27398203119313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a778b967b913%3A0x381eeaacc109a8a7!2sOuat%20Colony%2C%20Soubhagya%20Nagar%2C%20Bhubaneswar%2C%20Odisha%20751008!5e1!3m2!1sen!2sin!4v1737226626172!5m2!1sen!2sin" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--<iframe src="https://maps.app.goo.gl/iEdL4ZREiAN1Bp4c9" width="100%" height="450px" frameborder="0" style="border:0; border-radius: 5px; position: relative; z-index: 2;" allowfullscreen=""></iframe>-->
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="info-item">
+                <i class="fa fa-envelope"></i>
+                <h4>Email Address</h4>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nishantsankarswain@gmail.com" target="_blank">nishantsankarswain@gmail.com</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-item">
+                <i class="fa fa-phone"></i>
+                <h4>Phone Number</h4>
+                <a href="tel:+917978304877">Call Now: +91 7978304877</a>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-item">
+                <i class="fa fa-map-marked-alt"></i>
+                <h4>Address</h4>
+                <a href="#">Bhubaneswar , Odisha , India</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>Contact Us</h6>
+            <h4>Feel free to message us</h4>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <form id="contact-form">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="text" name="name" id="name" placeholder="Your Name..." required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="phone" name="phone" id="phone" placeholder="Your Phone..." required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="email" name="email" id="email" placeholder="Your E-mail..." required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="text" name="subject" id="subject" placeholder="Subject...">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="button" id="form-submit" class="orange-button" onclick="sendEmail()">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <div class="logo-slider">
+        <div class="logo-items">
+          <div class="logo-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c5/Siksha_%E2%80%98O%E2%80%99_Anusandhan.png" alt="">
+            <div class="caption">Siksha ‘O’ Anusandhan</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://images.seeklogo.com/logo-png/45/2/ouat-bhubaneswar-logo-png_seeklogo-452952.png" alt="">
+            <div class="caption">OUAT Bhubaneswar</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/John_Deere_logo.svg/1200px-John_Deere_logo.svg.png" alt="">
+            <div class="caption">John Deere</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://play-lh.googleusercontent.com/XbUXehxNB3rj9S77X3e54i8hHQhm1C08EEezbNSJsBQMw1r152pHjFpOaFIFskJafyc" alt="">
+            <div class="caption">Agri App</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://www.agriculture.com/thmb/BzkdwHU01GdpY4ZRvsn4tDB0j54=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fbn20logo-062eb836b0494fe18bce0f496a0cc0a3.jpg" alt="">
+            <div class="caption">Farmers Business Network</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://www.partnersinfoodsolutions.com/sites/default/files/styles/logo/public/partner-logos/Corteva_VerColor_RGB.png?itok=bpHtzzJ0" alt="">
+            <div class="caption">Corteva Agriscience</div>
+          </div>
+          <!-- Duplicate logos for seamless looping -->
+          <div class="logo-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c5/Siksha_%E2%80%98O%E2%80%99_Anusandhan.png" alt="">
+            <div class="caption">Siksha ‘O’ Anusandhan</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://images.seeklogo.com/logo-png/45/2/ouat-bhubaneswar-logo-png_seeklogo-452952.png" alt="">
+            <div class="caption">OUAT Bhubaneswar</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/John_Deere_logo.svg/1200px-John_Deere_logo.svg.png" alt="">
+            <div class="caption">John Deere</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://play-lh.googleusercontent.com/XbUXehxNB3rj9S77X3e54i8hHQhm1C08EEezbNSJsBQMw1r152pHjFpOaFIFskJafyc" alt="">
+            <div class="caption">Agri App</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://www.agriculture.com/thmb/BzkdwHU01GdpY4ZRvsn4tDB0j54=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fbn20logo-062eb836b0494fe18bce0f496a0cc0a3.jpg" alt="">
+            <div class="caption">Farmers Business Network</div>
+          </div>
+          <div class="logo-item">
+            <img src="https://www.partnersinfoodsolutions.com/sites/default/files/styles/logo/public/partner-logos/Corteva_VerColor_RGB.png?itok=bpHtzzJ0" alt="">
+            <div class="caption">Corteva Agriscience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2025 Kissan Seva-5.0 Agriculture Platform. All Rights Reserved. 
+          <br>Designed by <a title="CSS Templates" rel="sponsored" href="#" target="_blank">AgriCode Hunters</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+      var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }      
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+    
+    <script type="text/javascript">
+      (function() {
+         emailjs.init("AATK03xjZ6pezREAR"); // Replace with your actual EmailJS public key
+      })();
+   
+      function sendEmail() {
+         // Get form values
+         var name = document.getElementById('name').value;
+         var phone = document.getElementById('phone').value;
+         var email = document.getElementById('email').value;
+         var subject = document.getElementById('subject').value;
+         var message = document.getElementById('message').value;
+   
+         // Validate form values (simple validation)
+         if (name === "" || phone === "" || email === "" || message === "") {
+            alert("Please fill in all required fields.");
+            return;
+         }
+   
+         // Prepare the message parameters
+         var params = {
+            from_name: name,
+            from_email: email,
+            phone: phone,
+            subject: subject,
+            message: message,
+            to_name: "Recipient's Name"  // Replace with the recipient's name or use a dynamic value
+         };
+   
+         // Send email using EmailJS
+         emailjs.send('service_fisd3no', 'template_0bhb5ld', params)
+            .then(function(response) {
+               console.log('Success:', response);
+               alert('Message sent successfully!');
+               // Optionally, clear the form after submission
+               document.getElementById('contact-form').reset();
+            })
+            .catch(function(error) {
+               console.log('Error:', error);
+               alert('Failed to send message. Please try again later.');
+            });
+      }
+   </script>
+   
+   
+    
+  </body>
+</html>
